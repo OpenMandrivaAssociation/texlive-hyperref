@@ -1,3 +1,9 @@
+# revision 24171
+# category Package
+# catalog-ctan /macros/latex/contrib/hyperref
+# catalog-date 2011-10-02 01:04:40 +0200
+# catalog-license lppl
+# catalog-version 6.82j
 Name:		texlive-hyperref
 Version:	6.82j
 Release:	1
@@ -130,6 +136,7 @@ author's kvoptions, ltxcmdsand refcount packages.
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testurl.bbl
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testurl.bib
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testurl.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -140,3 +147,5 @@ author's kvoptions, ltxcmdsand refcount packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
