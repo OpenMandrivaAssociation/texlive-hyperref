@@ -1,4 +1,4 @@
-# revision 24171
+# revision 24751
 # category Package
 # catalog-ctan /macros/latex/contrib/hyperref
 # catalog-date 2011-10-02 01:04:40 +0200
@@ -6,7 +6,7 @@
 # catalog-version 6.82j
 Name:		texlive-hyperref
 Version:	6.82j
-Release:	1
+Release:	2
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The hyperref package is used to handle cross-referencing
@@ -35,19 +32,19 @@ use of the facilities of hyperref. The package depends on the
 author's kvoptions, ltxcmdsand refcount packages.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
