@@ -1,4 +1,4 @@
-# revision 25371
+# revision 26094
 # category Package
 # catalog-ctan /macros/latex/contrib/hyperref
 # catalog-date 2011-12-05 11:03:21 +0100
@@ -120,6 +120,7 @@ author's kvoptions, ltxcmdsand refcount packages.
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testbookmark.tex
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testfor2.tex
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testform.tex
+%doc %{_texmfdistdir}/source/latex/hyperref/test/testinfo.tex
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testnb.tex
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testoz.tex
 %doc %{_texmfdistdir}/source/latex/hyperref/test/testslide.tex
