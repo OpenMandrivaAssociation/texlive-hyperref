@@ -1,4 +1,4 @@
-# revision 26094
+# revision 27298
 # category Package
 # catalog-ctan /macros/latex/contrib/hyperref
 # catalog-date 2011-12-05 11:03:21 +0100
@@ -6,7 +6,7 @@
 # catalog-version 6.82m
 Name:		texlive-hyperref
 Version:	6.82m
-Release:	2
+Release:	3
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
@@ -63,6 +63,7 @@ author's kvoptions, ltxcmdsand refcount packages.
 %{_texmfdistdir}/tex/latex/hyperref/ntheorem-hyper.sty
 %{_texmfdistdir}/tex/latex/hyperref/pd1enc.def
 %{_texmfdistdir}/tex/latex/hyperref/pdfmark.def
+%{_texmfdistdir}/tex/latex/hyperref/psdextra.def
 %{_texmfdistdir}/tex/latex/hyperref/puarenc.def
 %{_texmfdistdir}/tex/latex/hyperref/puenc.def
 %{_texmfdistdir}/tex/latex/hyperref/puvnenc.def
@@ -93,6 +94,7 @@ author's kvoptions, ltxcmdsand refcount packages.
 %doc %{_texmfdistdir}/source/latex/hyperref/hyperref.dtx
 %doc %{_texmfdistdir}/source/latex/hyperref/hyperref.ins
 %doc %{_texmfdistdir}/source/latex/hyperref/nameref.dtx
+%doc %{_texmfdistdir}/source/latex/hyperref/psdmapshortnames.pl
 %doc %{_texmfdistdir}/source/latex/hyperref/test/Makefile
 %doc %{_texmfdistdir}/source/latex/hyperref/test/bit.tex
 %doc %{_texmfdistdir}/source/latex/hyperref/test/hog.eps
