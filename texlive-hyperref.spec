@@ -1,12 +1,12 @@
-# revision 27298
+# revision 27987
 # category Package
 # catalog-ctan /macros/latex/contrib/hyperref
-# catalog-date 2011-12-05 11:03:21 +0100
+# catalog-date 2012-10-15 00:17:21 +0200
 # catalog-license lppl
-# catalog-version 6.82m
+# catalog-version 6.83j
 Name:		texlive-hyperref
-Version:	6.82m
-Release:	3
+Version:	6.83j
+Release:	1
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
