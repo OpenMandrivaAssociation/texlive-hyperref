@@ -6,7 +6,7 @@
 # catalog-version 6.83j
 Name:		texlive-hyperref
 Version:	6.83j
-Release:	1
+Release:	2
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
