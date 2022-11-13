@@ -1,13 +1,13 @@
 Name:		texlive-hyperref
-Version:	6.88e
+Version:	64491
 Release:	1
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +26,12 @@ use of the facilities of hyperref. The package depends on the
 author's kvoptions, ltxcmdsand refcount packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +42,8 @@ author's kvoptions, ltxcmdsand refcount packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
