@@ -1,6 +1,6 @@
 Name:		texlive-hyperref
-Version:	65014
-Release:	2
+Version:	67583
+Release:	1
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
