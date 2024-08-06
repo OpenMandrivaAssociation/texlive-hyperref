@@ -1,5 +1,5 @@
 Name:		texlive-hyperref
-Version:	71766
+Version:	71883
 Release:	1
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
