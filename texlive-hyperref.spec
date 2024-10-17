@@ -3,7 +3,7 @@ Version:	71883
 Release:	1
 Summary:	Extensive support for hypertext in LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/hyperref
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyperref.doc.r%{version}.tar.xz
